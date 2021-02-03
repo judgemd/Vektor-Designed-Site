@@ -53,6 +53,12 @@ body {
     left:100px;
     background-color:#fe7062;
 }
+.btm:hover {
+    transform:scale(1.1);
+}
+.btm:focus {
+    outline: none;
+}
 .inter {
     position:relative;
     top:100px;
@@ -67,4 +73,38 @@ body {
 }
 .scroll:active {
     color:#fe7062
+}
+@media only screen and (max-width:600px){
+    .navbar ul {
+        display: none;
+    }
+    .logo {
+        position:relative;
+        left:150px
+    }
+    .title h2 {
+        font-size:28px;
+        position:relative;
+        left:150px;
+        top:20px;
+    }
+    .btm {
+        font-size:15px;
+        width:120px;
+        height:30px;
+        position:relative;
+        left:160px;
+    }
+    .inter {
+        width:550px;
+        position:relative;
+        top:250px;
+        right:270px;
+    }
+    .scroll {
+        font-size:18px;
+        position:relative;
+        left:250px;
+        top:300px
+    }
 }
